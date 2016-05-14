@@ -1,4 +1,7 @@
 @base: #f938ab;
+@fontcolor:#fff;
+@btn:red;
+@btnpadd:10px;
 
 .box-shadow(@style, @c) when (iscolor(@c)) {
   -webkit-box-shadow: @style @c;
@@ -13,10 +16,8 @@
   div { .box-shadow(0 0 5px, 30%) }
 }
 
-@fontcolor:#fff;
-@btn:red;
-@btnpadd:padding:5px 10px;
-.container a{background:@btn;padding:@btnpass;}
+
+.container a{background:@btn;padding:@btnpadd;color:@fontcolor;}
 
 
 
